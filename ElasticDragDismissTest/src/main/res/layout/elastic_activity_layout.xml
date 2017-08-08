@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hzw.elasticdragdismiss.ElasticDragDismissView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:dragDismissDistance="112dp"
+    app:dragDismissScale="0.95"
+    android:id="@+id/elasticview">
+
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?android:actionBarSize"
+         android:background="#3b000000"
+         android:alpha="0.5"
+         android:theme="@android:style/ThemeOverlay.Material.Dark"/>
+
+     <android.support.v4.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="?android:actionBarSize">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@color/colorAccent"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@color/colorPrimary"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@color/colorPrimaryDark"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@mipmap/ic_launcher"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@color/colorAccent"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@color/colorPrimary"/>
+
+
+
+         </LinearLayout>
+
+     </android.support.v4.widget.NestedScrollView>
+ </FrameLayout>
+
+</com.hzw.elasticdragdismiss.ElasticDragDismissView>
